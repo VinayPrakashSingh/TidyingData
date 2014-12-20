@@ -1,7 +1,7 @@
 ## load libraries
 library(data.table)
 library (reshape2)
-# downlod and unzip file
+# download and unzip file
 if (!file.exists("./data")) {dir.create("./data")}
         fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
         destfile <- "CI-HAR-Dataset.zip"
@@ -42,4 +42,4 @@ moltendata <- melt (mergedata, id = c("label", "subject"))
 ## Get means 
 tidydata <- dcast (moltendata, label + subject ~ variable, mean)
 ## Write tidy dataset to file
-write.table(tidydata, file = "./tidy_data.txt")
+write.table(tidydata, file = "./tidy_data.txt", row.names = F)
