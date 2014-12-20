@@ -36,5 +36,3 @@ More information about the files is available in README.txt. More information ab
 6. Merge training and test observations with cbind () functions. Add dewscriptive labels of activities.
 
 7. Create tidy data set with the average of each variable for each activity and each subject.
-
-To run cleaning procedure, call run_analysis function.
