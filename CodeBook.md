@@ -27,7 +27,7 @@ More information about the files is available in README.txt. More information ab
 
 2. Data files appears in different directories (train and test) in Data directory so I use paste() function to define path to each file when load files to data frames. 
 
-3.Import lables, features from activity_labels.txt and features.txt files 
+3. Import lables, features from activity_labels.txt and features.txt files 
 
 4. Make logical vector with mean & std set to TRUE for extract only the measurements on the mean and standard deviation for each measurement.
 
